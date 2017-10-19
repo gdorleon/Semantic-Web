@@ -1,0 +1,2087 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-8 "http://www.semanticweb.org/elanne/ontologies/2015/9/untitled-ontology-8#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/elanne/ontologies/2015/9/untitled-ontology-8#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/elanne/ontologies/2015/9/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    //propriétés des objets
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;ehIngredienteDe">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </ObjectProperty>
+    
+
+
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;ehRecheioDe">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-8;Pizza"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;RecheioPizza"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-8;ehIngredienteDe"/>
+        <inverseOf rdf:resource="&untitled-ontology-8;temRecheio"/>
+    </ObjectProperty>
+    
+
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;temIngrediente">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <inverseOf rdf:resource="&untitled-ontology-8;ehIngredienteDe"/>
+    </ObjectProperty>
+    
+
+
+
+    <ObjectProperty rdf:about="&untitled-ontology-8;temRecheio">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Pizza"/>
+        <rdfs:range rdf:resource="&untitled-ontology-8;RecheioPizza"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-8;temIngrediente"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Alho">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Amendoim">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Atum">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Bacon">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Banana">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;BatataPalha">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Brocolis">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Calabresa">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Camarao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Canela">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Cebola">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Champignon">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Cheddar">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioQueijos"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;ChocolateBranco">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;ChocolatePreto">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Condensado">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Coracao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;CremeLeite">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioQueijos"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;DoceLeite">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;File">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Frango">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;LomboCanadense">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Milho">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Morango">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioDoce"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Mussarela">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioQueijos"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;NomePizza">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Pizza"/>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Ovos">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Palmito">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Parmesao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioQueijos"/>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PeitoPeruDefumado">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Pepperoni">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Pizza">
+        <disjointWith rdf:resource="&untitled-ontology-8;RecheioPizza"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaAlhoOleo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Alho"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Parmesao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaAtum">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Cebola"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Atum"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaBacon">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Bacon"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaBanana">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Canela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Banana"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaBrocolis">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Brocolis"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Requeijao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaCalabresa">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Calabresa"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Cebola"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaCamarao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Parmesao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Camarao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaCatuperu">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;PeitoPeruDefumado"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Requeijao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaChampignon">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Champignon"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaCharge">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Amendoim"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;DoceLeite"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;ChocolatePreto"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaChocolate">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;ChocolatePreto"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;CremeLeite"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaChocolateBranco">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;CremeLeite"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;ChocolateBranco"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+ 
+
+    <Class rdf:about="&untitled-ontology-8;PizzaCoracao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Cebola"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Coracao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaFileCheddar">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;File"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Cheddar"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaFiorentina">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Presunto"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Ovos"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Champignon"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaFrangoCatupiry">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Requeijao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Frango"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaFrangoSupremo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Milho"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;CremeLeite"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Tomate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Frango"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaLombinho">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;LomboCanadense"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Tomate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaMarguerita">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Tomate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Parmesao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaMilho">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Milho"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaMussarela">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Tomate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+ 
+
+    <Class rdf:about="&untitled-ontology-8;PizzaNapolitana">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Tomate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Parmesao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Presunto"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaPalmito">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Palmito"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaPepperoni">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Pepperoni"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaPortuguesa">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Ovos"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Cebola"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Presunto"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaQuatroQueijos">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Provolone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Parmesao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Requeijao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaRucula">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Rucula"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Parmesao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;TomateSeco"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaSensacao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Morango"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;CremeLeite"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Condensado"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;ChocolatePreto"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaStrogonoffCamarao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Camarao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;CremeLeite"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;BatataPalha"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Parmesao"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaStrogonoffCarne">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;CremeLeite"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;File"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;BatataPalha"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Champignon"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;PizzaVegetariana">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;NomePizza"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;TomateSeco"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Mussarela"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Tomate"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Palmito"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Champignon"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-8;temRecheio"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-8;Brocolis"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Presunto">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioCarne"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Provolone">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioQueijos"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;RecheioCarne">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioPizza"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;RecheioDoce">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioPizza"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;RecheioPizza"/>
+    
+
+
+  
+
+    <Class rdf:about="&untitled-ontology-8;RecheioQueijos">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioPizza"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;RecheioVegetal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioPizza"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Requeijao">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioQueijos"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Rucula">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+
+    <Class rdf:about="&untitled-ontology-8;Tomate">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+
+    <Class rdf:about="&untitled-ontology-8;TomateSeco">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;RecheioVegetal"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Alho">
+        <rdf:type rdf:resource="&untitled-ontology-8;Alho"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaAlhoOleo"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Amendoim">
+        <rdf:type rdf:resource="&untitled-ontology-8;Amendoim"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCharge"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Atum">
+        <rdf:type rdf:resource="&untitled-ontology-8;Atum"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaAtum"/>
+    </NamedIndividual>
+    
+
+
+    
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Bacon">
+        <rdf:type rdf:resource="&untitled-ontology-8;Bacon"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaBacon"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Banana">
+        <rdf:type rdf:resource="&untitled-ontology-8;Banana"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaBanana"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;BatataPalha">
+        <rdf:type rdf:resource="&untitled-ontology-8;BatataPalha"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCamarao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCarne"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Brocolis">
+        <rdf:type rdf:resource="&untitled-ontology-8;Brocolis"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaBrocolis"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaVegetariana"/>
+    </NamedIndividual>
+    
+
+
+ 
+    <NamedIndividual rdf:about="&untitled-ontology-8;Calabresa">
+        <rdf:type rdf:resource="&untitled-ontology-8;Calabresa"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCalabresa"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Camarao">
+        <rdf:type rdf:resource="&untitled-ontology-8;Camarao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCamarao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCamarao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Canela">
+        <rdf:type rdf:resource="&untitled-ontology-8;Canela"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaBanana"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Cebola">
+        <rdf:type rdf:resource="&untitled-ontology-8;Cebola"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaAtum"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCalabresa"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCoracao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPortuguesa"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Champignon">
+        <rdf:type rdf:resource="&untitled-ontology-8;Champignon"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaChampignon"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFiorentina"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCarne"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaVegetariana"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Cheddar">
+        <rdf:type rdf:resource="&untitled-ontology-8;Cheddar"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFileCheddar"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;ChocolateBranco">
+        <rdf:type rdf:resource="&untitled-ontology-8;ChocolateBranco"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaChocolateBranco"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;ChocolatePreto">
+        <rdf:type rdf:resource="&untitled-ontology-8;ChocolatePreto"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCharge"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaChocolate"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaSensacao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Condensado">
+        <rdf:type rdf:resource="&untitled-ontology-8;Condensado"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaSensacao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Coracao">
+        <rdf:type rdf:resource="&untitled-ontology-8;Coracao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCoracao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;CremeLeite">
+        <rdf:type rdf:resource="&untitled-ontology-8;CremeLeite"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaChocolate"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaChocolateBranco"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFrangoSupremo"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaSensacao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCamarao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCarne"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;DoceLeite">
+        <rdf:type rdf:resource="&untitled-ontology-8;DoceLeite"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCharge"/>
+    </NamedIndividual>
+    
+
+
+   
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;File">
+        <rdf:type rdf:resource="&untitled-ontology-8;File"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFileCheddar"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCarne"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Frango">
+        <rdf:type rdf:resource="&untitled-ontology-8;Frango"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFrangoCatupiry"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFrangoSupremo"/>
+    </NamedIndividual>
+    
+
+
+   
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;LomboCanadense">
+        <rdf:type rdf:resource="&untitled-ontology-8;LomboCanadense"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaLombinho"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Milho">
+        <rdf:type rdf:resource="&untitled-ontology-8;Milho"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFrangoSupremo"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaMilho"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Morango">
+        <rdf:type rdf:resource="&untitled-ontology-8;Morango"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaSensacao"/>
+    </NamedIndividual>
+    
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Mussarela">
+        <rdf:type rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaAlhoOleo"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaAtum"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaBacon"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaBrocolis"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCalabresa"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCamarao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCatuperu"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaChampignon"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCoracao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFileCheddar"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFiorentina"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFrangoSupremo"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaLombinho"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaMarguerita"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaMilho"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaMussarela"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaNapolitana"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPalmito"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPepperoni"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPortuguesa"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaQuatroQueijos"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaRucula"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCamarao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCarne"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaVegetariana"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Ovos">
+        <rdf:type rdf:resource="&untitled-ontology-8;Ovos"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFiorentina"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPortuguesa"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Palmito">
+        <rdf:type rdf:resource="&untitled-ontology-8;Palmito"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPalmito"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaVegetariana"/>
+    </NamedIndividual>
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Parmesao">
+        <rdf:type rdf:resource="&untitled-ontology-8;Parmesao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaAlhoOleo"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCamarao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaMarguerita"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaNapolitana"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaQuatroQueijos"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaRucula"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaStrogonoffCamarao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PeitoPeruDefumado">
+        <rdf:type rdf:resource="&untitled-ontology-8;PeitoPeruDefumado"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCatuperu"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Pepperoni">
+        <rdf:type rdf:resource="&untitled-ontology-8;Pepperoni"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPepperoni"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaAlhoOleo">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaAlhoOleo"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Alho"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Parmesao"/>
+    </NamedIndividual>
+    
+
+
+ 
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaAtum">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaAtum"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Atum"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Cebola"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaBacon">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaBacon"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Bacon"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaBanana">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaBanana"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Banana"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Canela"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaBrocolis">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaBrocolis"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Brocolis"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Requeijao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaCalabresa">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaCalabresa"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Calabresa"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Cebola"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaCamarao">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaCamarao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Camarao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Parmesao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaCatuperu">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaCatuperu"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;PeitoPeruDefumado"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Requeijao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaChampignon">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaChampignon"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Champignon"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaCharge">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaCharge"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Amendoim"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;ChocolatePreto"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;DoceLeite"/>
+    </NamedIndividual>
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaChocolate">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaChocolate"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;ChocolatePreto"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;CremeLeite"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaChocolateBranco">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaChocolateBranco"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;ChocolateBranco"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;CremeLeite"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaCoracao">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaCoracao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Cebola"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Coracao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaFileCheddar">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaFileCheddar"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Cheddar"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;File"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaFiorentina">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaFiorentina"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Champignon"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Ovos"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Presunto"/>
+    </NamedIndividual>
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaFrangoCatupiry">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaFrangoCatupiry"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Frango"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Requeijao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaFrangoSupremo">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaFrangoSupremo"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;CremeLeite"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Frango"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Milho"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Tomate"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaLombinho">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaLombinho"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;LomboCanadense"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Tomate"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaMarguerita">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaMarguerita"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Parmesao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Tomate"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaMilho">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaMilho"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Milho"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaMussarela">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaMussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Tomate"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaNapolitana">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaNapolitana"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Parmesao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Presunto"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Tomate"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaPalmito">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaPalmito"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Palmito"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaPepperoni">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaPepperoni"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Pepperoni"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaPortuguesa">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaPortuguesa"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Cebola"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Ovos"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Presunto"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaQuatroQueijos">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaQuatroQueijos"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Parmesao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Provolone"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Requeijao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaRucula">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaRucula"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Parmesao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Rucula"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;TomateSeco"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaSensacao">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaSensacao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;ChocolatePreto"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Condensado"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;CremeLeite"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Morango"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaStrogonoffCamarao">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaStrogonoffCamarao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;BatataPalha"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Camarao"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;CremeLeite"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Parmesao"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaStrogonoffCarne">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaStrogonoffCarne"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;BatataPalha"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Champignon"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;CremeLeite"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;File"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+    </NamedIndividual>
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;PizzaVegetariana">
+        <rdf:type rdf:resource="&untitled-ontology-8;PizzaVegetariana"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Brocolis"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Champignon"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Mussarela"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Palmito"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;Tomate"/>
+        <untitled-ontology-8:temRecheio rdf:resource="&untitled-ontology-8;TomateSeco"/>
+    </NamedIndividual>
+    
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Presunto">
+        <rdf:type rdf:resource="&untitled-ontology-8;Presunto"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFiorentina"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaNapolitana"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaPortuguesa"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Provolone">
+        <rdf:type rdf:resource="&untitled-ontology-8;Provolone"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaQuatroQueijos"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Requeijao">
+        <rdf:type rdf:resource="&untitled-ontology-8;Requeijao"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaBrocolis"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaCatuperu"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFrangoCatupiry"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaQuatroQueijos"/>
+    </NamedIndividual>
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Rucula">
+        <rdf:type rdf:resource="&untitled-ontology-8;Rucula"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaRucula"/>
+    </NamedIndividual>
+    
+
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;Tomate">
+        <rdf:type rdf:resource="&untitled-ontology-8;Tomate"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaFrangoSupremo"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaLombinho"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaMarguerita"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaMussarela"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaNapolitana"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaRucula"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaVegetariana"/>
+    </NamedIndividual>
+    
+
+
+
+    <NamedIndividual rdf:about="&untitled-ontology-8;TomateSeco">
+        <rdf:type rdf:resource="&untitled-ontology-8;TomateSeco"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaRucula"/>
+        <untitled-ontology-8:ehRecheioDe rdf:resource="&untitled-ontology-8;PizzaVegetariana"/>
+    </NamedIndividual>
+    
+
+
+  
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-8;Alho"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Brocolis"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Cebola"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Champignon"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Milho"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Palmito"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Rucula"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Tomate"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;TomateSeco"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-8;Cheddar"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;CremeLeite"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Mussarela"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Parmesao"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Provolone"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Requeijao"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-8;Amendoim"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Banana"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Canela"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;ChocolateBranco"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;ChocolatePreto"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Condensado"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;DoceLeite"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Morango"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-8;RecheioCarne"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;RecheioDoce"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;RecheioQueijos"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;RecheioVegetal"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaAlhoOleo"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaAtum"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaBacon"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaBanana"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaBrocolis"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaCalabresa"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaCamarao"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaCatuperu"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaChampignon"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaCharge"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaChocolate"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaChocolateBranco"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaCoracao"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaFileCheddar"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaFiorentina"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaFrangoCatupiry"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaFrangoSupremo"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaLombinho"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaMarguerita"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaMilho"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaMussarela"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaNapolitana"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaPalmito"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaPepperoni"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaPortuguesa"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaQuatroQueijos"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaRucula"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaSensacao"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaStrogonoffCamarao"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaStrogonoffCarne"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PizzaVegetariana"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-8;Atum"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Bacon"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;BatataPalha"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Calabresa"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Camarao"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Coracao"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;File"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Frango"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;LomboCanadense"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Ovos"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;PeitoPeruDefumado"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Pepperoni"/>
+            <rdf:Description rdf:about="&untitled-ontology-8;Presunto"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
